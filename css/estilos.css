@@ -1,0 +1,383 @@
+
+body{
+	background-color: none;
+}
+
+li{
+	background-color: none; 
+	text-align: left;
+	list-style: none;
+}
+*{
+	z-index: 0;
+}
+
+.icon-nav{
+	margin-left: 5px;
+}
+
+.show{
+	display: inline-block;
+}
+
+.hidden{
+	display: none;
+}
+
+.vida{
+	background: none;
+	width: 300px;
+	height: 38px;
+	position: fixed;
+	bottom: 0;
+	z-index: 1;
+	right: 20px;
+	animation: latidos .9s infinite;
+	transform-origin: center;
+}
+
+/*
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.1); }
+    to { transform: none; }
+}
+*/
+
+.holamenu{
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	z-index: 100;
+	background-color:black;
+	opacity:0.9;
+}
+
+.holabusqueda{
+	width: 100%;
+	height: 65px;
+	margin-top: 40px;
+	position: fixed;
+	z-index: 100;
+	background-color:black;
+	opacity:0.9;
+}
+
+.holabanner{
+	width: 100%;
+	height: 310px;
+	margin-top: 105px;
+	position: fixed;
+	z-index: 100;
+	background-color:black;
+	opacity:0.9;
+	text-align: center;
+	color: white;
+}
+
+.holamarcas{
+	width: 100%;
+	height: 90px;
+	margin-top: 415px;
+	position: fixed;
+	z-index: 100;
+	background-color:black;
+	opacity:0.9;
+}
+
+.holaspace{
+	width: 100%;
+	height: 110px;
+	margin-top: 505px;
+	position: fixed;
+	z-index: 100;
+	background-color:black;
+	opacity:0.9;
+}
+
+.holabuton{
+	width: 100%;
+	height: 42px;
+	position: fixed;
+	z-index: 100;
+	background-color:black;
+	opacity:0.9;
+	bottom: 0;
+}
+
+
+
+
+.modal-content{
+	font-size: 20px;
+	margin-top: 10px;
+	background-color:white;
+	text-align: left;
+}
+
+
+
+
+.main-menu{
+	padding-top: 5px;
+	height: 35px;
+}
+
+.menu{
+	background-color: gray;
+	height: 35px;
+}
+
+.item1-menu{
+	width: 150px;
+	background-color: none;
+	float: right;
+}
+
+.item2-menu{
+	width: 230px;
+	background-color: none;
+	float: right;
+	cursor: pointer;
+}
+
+.item3-menu{
+	width: 150px;
+	background-color: none;
+	float: right;
+}
+
+.header-logo{
+	min-height: 70px;
+	padding-top: 10px;
+	background-color: #f6f6f6;
+	box-sizing: border-box;
+}
+
+.caja-logo{
+	background-color: none;
+	padding-left: 70px;
+}
+
+.caja-queBuscas{
+	padding-top: 10px;
+	background-color: none;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: right;
+	padding-right: 55px;
+}
+
+.que-buscas{
+	color:#b30000;
+	text-decoration-line: #b30000;
+	text-align: center;
+}
+
+
+
+#departamento-caja {
+	list-style: none;
+	width: 200px;
+	margin: 0 auto;
+	background-color: red;
+	display: inline-block;
+	margin-right: 50px;
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+.banner{
+	height: 310px;
+	background-color: gray;
+	background-image: url('../site/img/aver2.jpg');
+
+}
+
+.caja-marcas{
+	text-align: center;
+	background-color:#f1f1f1;
+	padding-top: 10px;
+	/*originalmente no lleva height*/
+	height: 70px;
+}
+
+#marca{
+	width: 90px;
+	height: 50px;
+	background-color: white;
+	display: inline-block;
+}
+
+
+.contenedor-product{
+	display: inline-block;
+	text-align: center;
+	margin-left: 20px;
+	vertical-align: top;
+}
+
+.space-product-bootom{
+	margin-bottom: 20px;
+}
+
+
+.img-product{
+	width: 300px;
+	height: 220px;
+	background-color: red;
+	color: black;
+}
+
+
+
+.desc-precio{
+	color: red;
+	font-size: 15px;
+	text-align: center;
+}
+
+.producto{
+	width: 200px;
+	width: 300px;
+	background-color: black;
+	margin: 0 auto;
+	color: white;
+	display: inline-block;
+	padding-top: 20px;
+	margin-right: 20px;
+}
+
+.producto-departamento{
+	width: 200px;
+	width: 300px;
+	background-color: black;	
+	color: white;
+	display: inline-block;
+	padding-top: 20px;
+	margin-left: 10px;
+	margin-top: 10px;
+	text-align: center;
+
+}
+
+
+.img-producto{
+	background-color: white;
+	width: 170px;
+	margin: 0 auto;
+	height: 200px;
+}
+
+.solicitud-enviada{
+	margin-top: 10px;
+	text-align: center;
+	height: 60px;
+	background-color:limegreen;
+	padding-top: 20px;
+}
+
+
+
+
+
+
+
+.chat-avelun{
+	background-image: url('../site/img/logo_marca.jpg');
+	background-size: cover;
+	background-size: 100% 100%;
+	min-height: 500px;
+}
+
+
+
+
+.footer-left{
+	background-color: black;
+	height: 300px;
+	color: gray;
+	font-size: 14px;
+	text-align: justify;
+	padding: 50px;
+}
+
+.footer-right{
+	background-color: black;
+	height: 300px;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	padding: 50px;
+}
+
+.avisos-legales{
+	width:200px; 
+	background-color:black; 
+	border-left:solid 1px gray;
+	display: inline-block;
+	color:gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:700px){
+.item1-menu{
+	width: 120px;
+	background-color: none;
+	float: right;
+}
+
+.item2-menu{
+	width: 170px;
+	background-color: none;
+	float: right;
+}
+
+.item3-menu{
+	width: 100px;
+	background-color: none;
+	float: right;
+}
+
+
+.caja-logo{	
+	padding-left: 0;
+	text-align: center;
+}
+
+.caja-queBuscas{
+	text-align: center;
+	cursor: pointer;
+	padding-right: 0px;
+}
+
+
+}

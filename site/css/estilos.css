@@ -1,0 +1,726 @@
+
+body{
+	background-color: none;
+}
+
+li{
+	background-color: none; 
+	text-align: left;
+	list-style: none;
+}
+*{
+	z-index: 0;
+}
+
+.icon-nav{
+	margin-left: 5px;
+}
+
+.show{
+	display: inline-block;
+}
+
+.hidden{
+	display: none;
+}
+
+.vida{
+	background: none;
+	width: 300px;
+	height: 38px;
+	position: fixed;
+	bottom: 0;
+	z-index: 1;
+	right: 20px;
+	animation: latidos .9s infinite;
+	transform-origin: center;
+}
+
+
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.1); }
+    to { transform: none; }
+}
+
+
+
+.modal-content{
+	font-size: 20px;
+	margin-top: 10px;
+	background-color:white;
+	text-align: left;
+}
+
+
+
+
+.main-menu{
+	padding-top: 5px;
+	height: 35px;
+}
+
+.menu{
+	background-color: gray;
+	height: 35px;
+}
+
+.item1-menu{
+	width: 150px;
+	background-color: none;
+	float: right;
+}
+
+.item2-menu{
+	width: 230px;
+	background-color: none;
+	float: right;
+	cursor: pointer;
+}
+
+.item3-menu{
+	width: 150px;
+	background-color: none;
+	float: right;
+}
+
+.header-logo{
+	min-height: 70px;
+	padding-top: 10px;
+	background-color: #f6f6f6;
+	box-sizing: border-box;
+}
+
+.caja-logo{
+	background-color: none;
+	padding-left: 70px;
+}
+
+.caja-queBuscas{
+	padding-top: 15px;
+	background-color: none;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: right;
+	padding-right: 55px;
+}
+
+.que-buscas{
+	color:#b30000;
+	text-decoration-line: #b30000;
+	text-align: center;
+}
+
+
+
+#departamento-caja {
+	list-style: none;
+	width: 200px;
+	margin: 0 auto;
+	background-color: red;
+	display: inline-block;
+	margin-right: 50px;
+	margin-top: 30px;
+}
+
+
+.btn-que-buscas{
+	border: none;
+	color: #007bff;
+	background-color:white;
+}
+
+.btn-que-buscas-dos{
+	border: none;
+	color: #007bff;
+	background-color:#f1f1f1;
+}
+
+
+
+
+
+
+.banner{
+	height: 310px;
+	background-color: gray;
+	background-image: url('../img/aver2.jpg');
+
+}
+
+.caja-marcas{
+	text-align: center;
+	background-color:#f1f1f1;
+	padding-bottom: 10px;
+	/*originalmente no lleva height*/
+	height: auto;
+}
+
+#marca{
+	margin-top: 10px;
+	width: 150px;
+	height: 70px;
+	background-color: white;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.contenedor-product{
+	display: inline-block;
+	text-align: center;
+	margin-left: 20px;
+	vertical-align: top;
+}
+
+.space-product-bootom{
+	margin-bottom: 20px;
+}
+
+
+.img-product{
+	width: 300px;
+	height: 220px;
+	background-color: white;
+	color: black;
+}
+
+
+
+.desc-precio{
+	color: red;
+	font-size: 15px;
+	text-align: center;
+}
+
+.producto{
+	width: 200px;
+	width: 300px;
+	background-color: black;
+	margin: 0 auto;
+	color: white;
+	display: inline-block;
+	padding-top: 20px;
+	margin-right: 20px;
+}
+
+.producto-departamento{
+	width: 200px;
+	width: 300px;
+	background-color: black;	
+	color: white;
+	display: inline-block;
+	padding-top: 20px;
+	margin-left: 10px;
+	margin-top: 10px;
+	text-align: center;
+
+}
+
+
+.img-producto{
+	background-color: white;
+	width: 170px;
+	margin: 0 auto;
+	height: 200px;
+}
+
+.solicitud-enviada{
+	margin-top: 10px;
+	text-align: center;
+	height: 60px;
+	background-color:limegreen;
+	padding-top: 20px;
+}
+
+
+
+
+
+
+
+.chat-avelun{
+	background-image: url('../img/logo_marca.jpg');
+	background-size: cover;
+	background-size: 100% 100%;
+	min-height: 500px;
+}
+
+
+
+
+.footer-left{
+	background-color: black;
+	height: 300px;
+	color: gray;
+	font-size: 14px;
+	text-align: justify;
+	padding: 50px;
+}
+
+.footer-right{
+	background-color: black;
+	height: 300px;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	padding: 50px;
+}
+
+.avisos-legales{
+	width:200px; 
+	background-color:black; 
+	border-left:solid 1px gray;
+	display: inline-block;
+	color:gray;
+}
+
+.popupCompra{
+	width: 600px; 
+	height: auto; 
+	background-color: white; 
+	box-shadow: 0 0 5px #CCC; 
+	display: inline-block; 
+	margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foterwith{width: 101.1%}
+
+
+
+
+
+/*
+@font-face {
+  font-family: "gilmoore-Rough";
+  src: url("gilmoore-Rough.woff2");
+}
+
+
+
+
+
+.divglobal{
+	padding-top: 80px;
+	width: 100%;
+	height:700px; 
+	overflow: scroll;
+	z-index: 110;
+
+}
+*/
+
+
+
+
+.logoInc{
+	color:white;
+	width: 100%; 
+	height: 170px; 
+	margin-top: 0px; 
+	text-align: center;
+	background-color:none;
+	padding-top: 20px;
+}
+
+		.imgIni{
+			display: inline-block; 
+			vertical-align: top;
+			background-color:none;
+		}
+		      
+		.h3Frase{
+			background-color: none; 
+			width: 450px; 
+			height: auto; 
+			display: inline-block; 
+			margin-left: 20px; 
+			margin-top: 10px; 
+			text-align: center;
+			background-color:none;
+			font-size: 30px;
+		} 
+
+     
+
+
+
+
+.collage{
+	width: 100%; 
+	height: auto; 
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+
+
+
+
+.grupoCajas{
+	vertical-align: top;
+	width: 60%; 
+	height: auto; 
+	display: inline-block; 
+	vertical-align: top;
+	font-size: 28px;
+	font-family: "gilmoore-Rough";
+	background-color: none;
+	
+}
+
+				.cajaUno{
+					vertical-align: top;
+					width: 37%; 
+					height: 200px; 
+					background-color: none; 
+					display: inline-block;					
+					background-image: url("../img/crecimientoprofesional-min.jpg");
+					background-size: 100% 100%;
+					font-family: "gilmoore-Rough";
+					margin-bottom: 5px;
+					color: white;
+					padding-top: 40px;
+					box-sizing: border-box;
+				}
+
+				.cajaUno:hover{
+					background-image: none;
+					background-color: #e82127;
+				}
+
+				.cajaDos{
+					vertical-align: top;
+					width: 61.5%; 
+					height: 200px; 
+					background-color: none; 
+					display: inline-block;
+					background-image: url("../img/crecimientoperso-min.jpg");
+					background-size: 100% 100%;
+					margin-bottom: 5px;
+					color: white;
+					padding-top: 40px;
+					box-sizing: border-box;
+					
+				}
+
+				.cajaDos:hover{
+					background-image: none;
+					background-color: #e82127;
+				}
+
+				.cajaTres{
+					vertical-align: top;
+					width: 61.5%; 
+					height: 200px; 
+					background-color: none; 
+					display: inline-block;
+					background-image: url("../img/versebien-min.jpg");
+					background-size: 100% 100%;
+					color: white;
+					padding-top: 80px;
+					box-sizing: border-box;
+
+				}
+
+				.cajaTres:hover{
+					background-image: none;
+					background-color: #e82127;
+				}
+
+				.cajaCuatro{
+					vertical-align: top;
+					width: 37%; 
+					height: 200px; 
+					background-color: none; 
+					display: inline-block;
+					background-image: url("../img/cuidatusalud-min.jpg");
+					background-size: 100% 100%;
+					color: white;
+					padding-top: 50px;
+					box-sizing: border-box;
+				}  
+
+				.cajaCuatro:hover{
+					background-image: none;
+					background-color: #e82127;
+				}
+
+
+.cajaCinco{
+	width: 250px; 
+	height: 405px; 
+	background-color: none;
+	margin: 0 auto; 
+	display: inline-block; 
+	vertical-align: top;
+	background-image: url("../img/sentirsebien-min.jpg");
+	background-size: 100% 100%;
+	color: white;
+	padding-top: 150px;
+	box-sizing: border-box;
+	font-family: "gilmoore-Rough";
+	font-size: 30px; 
+}
+
+.cajaCinco:hover{
+	background-image: none;
+	background-color: #e82127;
+}
+
+.contenedorCajatienda{
+	width: 100%;
+	height: 210px;
+	background-color: none;
+	margin-top: 5px;
+
+
+}
+
+#cajaTienda{
+	width: 79%;
+	height: 200px;
+	margin: 0 auto;
+	background-image: url("../img/ventas-min.jpg");
+	background-size: 100% 145%;
+	cursor: pointer;
+	padding-top: 60px;
+	box-sizing: border-box;
+	color: white;
+	font-family: "gilmoore-Rough";
+	font-size: 30px;
+}
+
+#cajaTienda:hover{
+	background-image: none;
+	background-color: #e82127;
+}
+
+
+
+
+
+#menuCollage{
+	width: 100%; 
+	height: 100%;
+	display: block; 
+	position: fixed; 
+	z-index: 90; 
+	background-color:black; 
+	background-color:rgba(0, 0, 0.9, 0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+/**********************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:900px){
+
+
+
+
+	.logoInc{
+		color:white;
+		width: 100%; 
+		height: 250px; 
+		margin-top: 0px; 
+		text-align: center;
+		background-color:none;
+		padding-top: 20px;
+	}
+	
+			.imgIni{
+				display: block; 
+				vertical-align: top;
+				background-color:none;
+			}
+				  
+			.h3Frase{
+				background-color: none; 
+				width: 80%; 
+				height: auto; 
+				display: block; 				
+				text-align: center;
+				background-color:none;
+				font-size: 25px;
+				margin:0 auto;
+				margin-top: 20px; 
+			} 
+
+	.grupoCajas{
+		vertical-align: top;
+		width: 80%; 
+		height: auto; 
+		display: inline-block; 
+		vertical-align: top;
+		font-size: 30px;
+		font-family: "gilmoore-Rough";
+		background-color: none;
+		
+	}
+	
+					.cajaUno{
+						vertical-align: top;
+						width: 100%; 
+						height: 200px; 
+						background-color: none; 
+						display: block;
+						background-image: url("../img/crecimientoprofesional-min.jpg");
+						background-size: 100% 100%;
+						font-family: "gilmoore-Rough";
+						margin-bottom: 5px;
+						color: white;
+						padding-top: 40px;
+						box-sizing: border-box;
+					}
+	
+					.cajaUno:hover{
+						background-image: none;
+						background-color: red;
+					}
+	
+					.cajaDos{
+						vertical-align: top;
+						width: 100%; 
+						height: 200px; 
+						background-color: none; 
+						display: block;
+						background-image: url("../img/crecimientoperso-min.jpg");
+						background-size: 100% 100%;
+						margin-bottom: 5px;
+						color: white;
+						padding-top: 40px;
+						box-sizing: border-box;
+						
+					}
+	
+					.cajaTres{
+						vertical-align: top;
+						width: 100%; 
+						height: 200px; 
+						background-color: none; 
+						display: block;
+						background-image: url("../img/versebien-min.jpg");
+						background-size: 100% 100%;
+						color: white;
+						padding-top: 80px;
+						box-sizing: border-box;
+	
+					}
+	
+					.cajaCuatro{
+						vertical-align: top;
+						width: 100%; 
+						height: 200px; 
+						background-color: none;
+						margin-top:5px; 
+						display: block;
+						background-image: url("../img/cuidatusalud-min.jpg");
+						background-size: 100% 100%;
+						color: white;
+						padding-top: 50px;
+						box-sizing: border-box;
+					}  
+	
+	
+	.cajaCinco{
+		width: 80%; 
+		height: 200px; 
+		background-color: none;
+		margin: 0 auto; 
+		margin-top:5px;
+		display: block;
+		vertical-align: top;
+		background-image: url("../img/sentirsebien-min.jpg");
+		background-size: 100% ;
+		background-position: 0px -250px ;
+		color: white;
+		padding-top: 40px;
+		box-sizing: border-box;
+		font-family: "gilmoore-Rough";
+		font-size: 30px; 
+	}
+
+
+	#cajaTienda{
+		width: 80%;
+		height: 200px;
+		margin: 0 auto;
+		background-image: url("../img/ventas-min.jpg");
+		background-size: 100% 100%;
+		cursor: pointer;
+		padding-top: 60px;
+		box-sizing: border-box;
+		color: white;
+		font-family: "gilmoore-Rough";
+		font-size: 30px;
+	}
+
+
+}
+
+
+@media (max-width:700px){
+
+	.cajaCinco{
+		background-position: 0px -150px ;
+	}
+}

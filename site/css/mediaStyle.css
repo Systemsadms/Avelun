@@ -1,0 +1,145 @@
+@media (max-width:700px){
+
+.popupCompra{
+	width: 100%; 
+}
+
+
+.item1-menu{
+	width: 120px;
+	background-color: none;
+	float: right;
+}
+
+.item2-menu{
+	width: 170px;
+	background-color: none;
+	float: right;
+}
+
+.item3-menu{
+	width: 100px;
+	background-color: none;
+	float: right;
+}
+
+
+.caja-logo{	
+	padding-left: 0;
+	text-align: center;
+}
+
+.caja-queBuscas{
+	text-align: center;
+	cursor: pointer;
+	padding-right: 0px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:870px){
+
+.foterwith{ width: 101.8%; }
+
+
+.divglobal{
+
+	height:700px; 
+	margin-bottom: 200px;
+
+}
+
+
+.logoInc{
+	width: 100%; 
+	height: auto; 
+	margin-top: 50px; 
+	text-align: center
+}
+      
+		.imgIni{
+					display: block; 
+					vertical-align: top;
+				}
+
+		.h3Frase{
+			display: block; 
+			margin-left: 0px; 
+			margin-top: 0px; 
+			margin:80px auto;
+		} 
+
+     
+
+.grupoCajas{
+	width: 100%; 
+	height: auto; 
+	display: block; 
+	vertical-align: top;
+	text-align: center;
+}
+
+				.cajaUno{
+					width: 400px; 
+					height: 200px;  
+					display: inline-block;
+				}
+
+				.cajaDos{
+					width: 400px; 
+					height: 200px; 
+					display: inline-block;
+				}
+
+				.cajaTres{
+					width: 400px; 
+					height: 200px; 
+					display: inline-block;
+				}
+
+				.cajaCuatro{
+					width: 400px; 
+					height: 200px;  
+					display: inline-block;
+				}  
+
+.cajaCinco{
+	width: 400px; 
+	height: 200px; 
+	background-image: url("../img/senti.jpg"); 
+	display: inline-block; 
+	vertical-align: top;
+	margin-bottom: 5px;
+}
+
+.contenedorCajatienda{
+	width: 400px;
+	height: 200px; 
+	display: inline-block; 
+	margin-top: 0px;
+}
+
+.cajaTienda{
+	width: 100%;
+	height: 200px;
+	margin: 0 auto;
+
+}
+}
