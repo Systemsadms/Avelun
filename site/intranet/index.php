@@ -1,49 +1,33 @@
 <?php 
 session_start();
 
+
+
+include ("header.php");
  ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Avelun</title>
-    <meta charset="UTF-8">
-  <meta name=”description” content="Avelun es el mejor sitio para mujeres, encontrar una tienda online, consultorias medicas, farmacologicas, mentorias, ayudas profesionales y mas" />
-  <meta name="keywords" content="tienda, ropa, calzado, joyeria, zapatos, moda, salud, medicina"/>
-  <meta name="author" content="Systems Admins C.A" />
-  <meta name="copyright" content="Systems Admins C.A" />
-  <meta name="robots" content="index, follow">
-  <meta name="google" content="nositelinkssearchbox">
 
-<link rel="icon" type="image/png" href="img/lun.png">
-<link href="../css/estilos.css"  rel="stylesheet" type="text/css">
-<link href="../css/mediaStyle.css"  rel="stylesheet" type="text/css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<body>
 
-        <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<nav class="navbar ml-auto navbar-expand-lg navbar-light bg-dark " style='background-image:url(img/starfield-banner.jpg);' >
+<div style='margin-left:-16px; padding-left:50px;  width:220px; background-image:url(../img/lunbackground.jpg); background-position:-140px 0px;'> 
+    ><img src="../img/logo2.png" width="150" height="50" >
+</div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav  ml-auto" style='margin-right:40px;'>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.php" style='color: white;'>Home</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 
 
-
-<script type="text/javascript" src="script/scripts.js"></script>
-
-
-</head>
-
-<body style="margin: 0px;">
-
-    <?php
-
-include ('menu.php');
-
-?>
 
 
 
@@ -95,7 +79,7 @@ include ('menu.php');
 
         <script type="text/javascript">
 
-  window.location.href="cargar_fotos.php";
+  window.location.href="cargar_marcas.php";
 
 
 
@@ -111,7 +95,7 @@ include ('menu.php');
     else
       {
     ?>    
-        <h3 style="color: red;">El usuario o la contraseña son incorrectos!!</h3>
+        <h4 style="color: red; margin-top: 50px;">El usuario o la contraseña son incorrectos!!</h4>
 
 <?php
        
@@ -124,10 +108,6 @@ include ('menu.php');
 
   
 ?>
-
-
-
-
 
 
 

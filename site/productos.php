@@ -14,11 +14,8 @@
 		include ("departamentos.php");
 		include ("banner.php");
 		include ("marcas.php");
-?>
 
-	
 
-<?php
 		include ("filtro-productos.php");
 
 
@@ -26,9 +23,12 @@
 
 if(isset($_POST['marca'])){
 	 
-	 $marca = $_POST['marca']
+	 $marca = $_POST['marca'];
+
+
 ?>
 
+	
 
 
 
@@ -131,16 +131,6 @@ $consulta = "SELECT * FROM productos WHERE marca='$marca' ";
 
 
 	</div><!-- Fin del div class row--> 
-
-
-
-
-
-
-
-
-
-
 
 
 
