@@ -114,32 +114,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <?php
 		include ("footer.php");
 	?>
@@ -1261,23 +1235,9 @@
             initProductsViewCinco() ;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </script>
+
+        
 
 </body>
 </html>

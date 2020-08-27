@@ -1,6 +1,22 @@
+<?php
+session_start();
+if ($_SESSION['admin'] == 'admin')
+{
+include ("../../cnx.php");
+?>
+
+
+
 <html>
     <head>
     <tittle><tittle>
+               <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </head>
     <body>
 
@@ -55,22 +71,53 @@ $ssql = "SELECT * FROM marcas WHERE nombre_marca='$nombre'";
         }
     }
 ?>
+<div style="text-align: center; width: 100%; margin-top: 100px;">
+    <h3>Cargar Marca</h3>
+<div style="display: inline-block; width: 250px; height: auto; background-color: none; margin-top: 50px;">
+
+
+   <form method='post' action='#'>
+<div class="row">
+    <div class="col">
+      <input type="text" name='nombre' class="form-control" placeholder="Nombre de la Marca">
+    </div>
+</div>
+
+<br>
+<div class="row">
+    <div class="col">
+      <input type="text" name='pais' class="form-control" placeholder="Pais">
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col">
+      <textarea class="form-control" id="descripcion" name='descripcion' placeholder="Descripcion" rows="3"></textarea>
+    </div>
+</div>
+<br>
+
+    <input type='submit' value='Cargar' name='cargar'/>
+
+  </div>
+</form>
     
-        <form method='post' action='#'>
-            <label>Nombre de la Marca</label>
-            <input type='text'name='nombre'/>
-            <br>
-            <label>Pais</label>
-            <input type='text'name='pais'/>
-            <br>
-            <label>Descripcion</label>            
-            <input type='text' name='descripcion'/>
-            <input type='submit' value='Cargar' name='cargar'/>
-        </form>
-    
-   
-    
-    
-    
+</div> 
+</div>
+
+
+
+<?php     
+}
+else
+{     
+session_destroy();    
+header("location:index.php");  
+}
+?>
+
+
+
+
     </body>
 </html>

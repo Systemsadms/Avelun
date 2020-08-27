@@ -1,6 +1,24 @@
+<?php
+session_start();
+if ($_SESSION['admin'] == 'admin')
+{
+include ("../../cnx.php");
+?>
+
+
+
+
+
 <html>
     <head>
     <tittle><tittle>
+               <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </head>
     <body>
 
@@ -106,10 +124,25 @@ $ssql = "SELECT * FROM productos WHERE modelo='$modelo' AND nombre='$nombre'";
         }
     }
 ?>
-    
-        <form method='post' action='#' enctype="multipart/form-data">
-            <label>Nombre</label>
-            <input type='text'name='nombre'/>
+
+
+
+<div style="text-align: center; width: 100%; margin-top: 100px;">
+    <h3>Cargar Articulo</h3>
+
+
+
+
+
+
+<form method='post' action='#' enctype="multipart/form-data">
+
+
+<div style="display: inline-block; width: 250px; height: auto; background-color: none; margin-top: 50px;">
+
+
+        
+            <input type="text" name='nombre' class="form-control" placeholder="Nombre">
             <br>
                     <?php 
                     $consulta_mysql='select * from marcas where id>"0"';
@@ -117,11 +150,11 @@ $ssql = "SELECT * FROM productos WHERE modelo='$modelo' AND nombre='$nombre'";
                     $resultado_consulta_mysql= $conexion->query($consulta_mysql);
                     ?>
 
-                <form method="post" action="#">
+                
                     <label>Marca:</label>
 
                     <?php
-                    echo "<select name='marca' style='height:30px; margin-bottom:15px;'>";
+                    echo "<select class='form-control' name='marca' style='height:40px; margin-bottom:0px;'>";
                     ?>
                     <!--<option>Seleccionar..</option>-->
                     <?php                     
@@ -133,11 +166,10 @@ $ssql = "SELECT * FROM productos WHERE modelo='$modelo' AND nombre='$nombre'";
                     ?> 
 
             <br>
-            <label>Modelo</label>
-            <input type='text' name='modelo'/>
+            <input type='text' name='modelo' class="form-control" placeholder="Modelo"/>
             <br>
             <label>Tipo</label>
-            <select name='tipo'>
+            <select name='tipo' class='form-control'>
                 <option value='Mquillaje'>Maquillaje</option>
                 <option value='Proteinas'>Proteinas</option>
                 <option value='Short'>Shorts</option>
@@ -154,22 +186,45 @@ $ssql = "SELECT * FROM productos WHERE modelo='$modelo' AND nombre='$nombre'";
                 <option value='Cursos'>Cursos</option>
                 <option value='Escencias'>Escencias</option>
             </select>
+            
+       
+</div> 
+
+
+<div style="display: inline-block; width: 250px; height: auto; background-color: none; margin-top: 50px; margin-left: 100px;">
+
+
+
+<textarea class="form-control" id="descripcion" name='descripcion' placeholder="Descripcion" rows="3"></textarea>
             <br>
-            <label>Descripcion</label>
-            <input type='text' name='descripcion'/>
-            <br>
-            <label>Precio</label>
-            <input type='text' name='precio'/>
+            <input type='text' name='precio' class="form-control" placeholder="Precio"/>
             <br>
             <label>Foto</label>
             <input type='file' name='foto'/>
-            <br>
+            <br><br>
             <input type='submit' value='Cargar' name='cargar'/>
         </form>
-    
-   
-    
-    
-    
+
+
+
+
+</div>
+
+</div>
+
+
+
+
+<?php     
+}
+else
+{     
+session_destroy();    
+header("location:index.php");  
+}
+?>
+
+
+
     </body>
 </html>
