@@ -8,7 +8,7 @@
 
 
 
-<div id='demode' style='background: rgba(0, 0, 0, 0.4); display:none; position: fixed; top:0; right: 0; left: 0; bottom: 0; text-align: center;'>
+<div id='demode' style='background: rgba(0, 0, 0, 0.4); display:none; position: fixed; top:0; right: 0; left: 0; bottom: 0; text-align: center; z-index: 9;'>
     
         <div class="popupCompra">
 

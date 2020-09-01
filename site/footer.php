@@ -1,6 +1,6 @@
 
 
-<footer class="row foterwith"  >
+<footer class="row foterwith" style="z-index: 3;" >
 
 
 

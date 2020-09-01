@@ -140,7 +140,7 @@ $consulta = "SELECT * FROM productos WHERE marca='$marca' ";
 
 <?php
 }
-
+		include ("filtroFooter.php");
 		include ("footer.php");
 	?>
 </div><!--Container END-->

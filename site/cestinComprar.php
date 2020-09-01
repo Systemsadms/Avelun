@@ -36,12 +36,12 @@ $urlTwo = $_POST['urlTwo'];
 
 <br><br><br>
             
-<div id='demo' style="background-color: none; width: 100%; height: 600px; text-align: center; margin-top: 30px;">
+<div style="background-color: none; width: 100%; height: auto; text-align: center; margin-top: 30px; text-align: center;">
 
 
 
 
-<div style=" width: 600px; height: auto; background-color: white; display: inline-block; vertical-align: top;">
+<div class="comprarCestinImg">
 
 
 
@@ -50,7 +50,7 @@ $urlTwo = $_POST['urlTwo'];
         
                     <div style="width: 350px; height: 520px; background-color: none; display: inline-block; vertical-align: top; ">
                         
-                        <img src="" id="image" style="width: 350px; height: 520px;" />
+                        <img src="" id="image" style="width: 350px; height: 520px;"/>
                         <br><br>
 
                         <h6 id="producto" style="text-align: center; margin-left: 20px; margin-right: 20px;"></h6>
@@ -78,10 +78,10 @@ $urlTwo = $_POST['urlTwo'];
 
 
 
-<div style="display: inline-block; width: 500px; height: auto; background-color: none; vertical-align: top;">
+<div class="comprarCestinForm">
 
 
-                    <div class="modal-content" style="width: 400px;">
+                    <div class="modal-content" style="width: 400px; display: inline-block;">
                       <div class="modal-body" style="width: 400px;">
                         <form method='post' action='enviar_solicitud.php'>
 
@@ -140,7 +140,7 @@ $urlTwo = $_POST['urlTwo'];
 <br><br><br><br><br><br><br><br><br>
 
 <?php
-
+    include ("filtroFooter.php");
     include ("footer.php");
   ?>
 

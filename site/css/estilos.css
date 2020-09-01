@@ -541,6 +541,43 @@ li{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.comprarCestinImg{
+	width: 600px; 
+	height: auto; 
+	background-color: none; 
+	display: inline-block; 
+	vertical-align: top; 
+	text-align: center;
+}
+
+
+
+.comprarCestinForm{
+	display: inline-block; 
+	width: 500px; 
+	height: auto; 
+	background-color: none; 
+	vertical-align: top; 
+	text-align: center;
+}
+
+
+
 /**********************************************************************************/
 
 
@@ -723,4 +760,28 @@ li{
 	.cajaCinco{
 		background-position: 0px -150px ;
 	}
+
+
+
+
+
+}
+
+
+
+
+@media (max-width:600px){
+
+
+
+	.comprarCestinImg{
+	width: 100%; 
+
+}
+
+.comprarCestinForm{
+	width: 100%;
+}
+
+
 }

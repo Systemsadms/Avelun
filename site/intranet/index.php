@@ -1,6 +1,8 @@
 <?php 
 session_start();
 
+require ('../../cnx.php');
+
 
 
 include ("header.php");
@@ -63,44 +65,49 @@ include ("header.php");
 
 <?php
   
+
     if (isset($_POST['cargar'])) {
+
+
 
       $user = $_POST['user'];
       $pass = $_POST['pass'];
+      $tienda = 'Mingo';
+
     
       
-    if ($user == 'admin' && $pass == 'admin')
-      {
-              
-      $_SESSION['admin'] = $user ;
-
-         ?>
+   $query = "SELECT * FROM usuarios_admin_tienda WHERE correo ='$user' AND password = '$pass' AND tienda = '$tienda'";
+   $result = $conexion->query($query); 
+   $num = mysqli_num_rows($result); 
 
 
-        <script type="text/javascript">
+                 if ($num == 1) {
+                    
 
-  window.location.href="cargar_marcas.php";
-
-
-
-</script>
+                     $_SESSION['user'] = $user;
 
 
+                            ?>
+
+                              <script type="text/javascript">
+                                window.location.href="cargar_marcas.php";
+                              </script>
+
+                            <?php    
+
+                  }
 
 
- <?php
+                  else
 
-      }
+                    {
+                            ?>    
+                                <h4 style="color: red; margin-top: 50px;">El usuario o la contraseña son incorrectos!!</h4>
 
-    else
-      {
-    ?>    
-        <h4 style="color: red; margin-top: 50px;">El usuario o la contraseña son incorrectos!!</h4>
-
-<?php
+                            <?php
        
         
-      } 
+                     } 
 
 
 

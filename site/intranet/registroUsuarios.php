@@ -35,6 +35,7 @@ if(isset($_POST['cargar'])){
          $nombre = $_POST['nombre'];
          $apellido = $_POST['apellido'];
          $correo = $_POST['correo'];
+         $tienda = $_POST['tienda'];
          $password = $_POST['password'];
          $telefono = $_POST['telefono'];
          $direccion = $_POST['direccion'];
@@ -59,9 +60,10 @@ if(isset($_POST['cargar'])){
 
             $conexion->query("INSERT INTO usuarios_admin_tienda VALUES (
                 '',
+                '$tienda',
+                '$correo',
                 '$nombre',
                 '$apellido',
-                '$correo',
                 '$password',
                 '$direccion',
                 '$telefono',
@@ -97,6 +99,13 @@ if(isset($_POST['cargar'])){
 <div class="row">
     <div class="col">
       <input type="text" name='apellido' class="form-control" placeholder="Apellido">
+    </div>
+</div>
+<br>
+
+<div class="row">
+    <div class="col">
+      <input type="text" name='tienda' class="form-control" placeholder="Tienda">
     </div>
 </div>
 <br>
@@ -145,7 +154,8 @@ if(isset($_POST['cargar'])){
 
 
 
-<?php     
+<?php  
+
 }
 else
 {     

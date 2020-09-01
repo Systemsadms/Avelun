@@ -1,10 +1,10 @@
 
 
-<div style="width: 100%; height: auto; background-color: #f1f1f1; padding-top: 50px; padding-bottom: 50px; text-align: center;">
+<div style="width: 100%; height: auto; background-color: #f1f1f1; padding-top: 50px; padding-bottom: 50px; text-align: center; z-index: 5;">
     
 
 
-<div class="card" style="width: 200px; display: inline-block; margin-left: 10px; margin-top: 20px;">
+<div class="card" style="width: 200px; display: inline-block; margin-left: 10px; margin-top: 20px; z-index: 5;">
   <ul class="list-group list-group-flush">
     <!--<li class="list-group-item" style="background-color:#f1f1f1;">Vestidos</li>-->
     <!--<li class="list-group-item" style="background-color:#f1f1f1;">Faldas</li>-->
