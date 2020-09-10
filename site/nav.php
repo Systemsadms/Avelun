@@ -3,7 +3,7 @@
 			<a href="https://www.youtube.com/channel/UCe8Tguehwxz33uY94iUF3fw" target="_blank"><div class="item1-menu">YouTube <img src="img/youtube.jpg" width="30px" class="icon-nav"></div></a>
 
 
-			<a href="../vida/index.php"><div class="item2-menu" >
+			<a href="../index.php"><div class="item2-menu" >
         AVELUN VIDA <img src="img/heart.png" width="25px" class="icon-nav">
       </div></a>
 

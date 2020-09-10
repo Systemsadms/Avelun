@@ -12,9 +12,9 @@ include ("header.php");
 
 <body>
 
-<nav class="navbar ml-auto navbar-expand-lg navbar-light bg-dark " style='background-image:url(img/starfield-banner.jpg);' >
-<div style='margin-left:-16px; padding-left:50px;  width:220px; background-image:url(../img/lunbackground.jpg); background-position:-140px 0px;'> 
-    ><img src="../img/logo2.png" width="150" height="50" >
+<nav class="navbar ml-auto navbar-expand-lg navbar-dark bg-dark " style='background-image:url(../img/banner-star.jpg);' >
+<div style='margin-left:-16px; padding-left:50px;  width:220px; background-image:url(../img/lunbackground.png); background-position:-140px 0px;'> 
+    <img src="../img/logo2.png" width="150" height="50" >
 </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -27,8 +27,6 @@ include ("header.php");
     </ul>
   </div>
 </nav>
-
-
 
 
 
@@ -51,13 +49,13 @@ include ("header.php");
 <br>
 <div class="row">
     <div class="col">
-      <input type="text" name='pass' class="form-control" placeholder="Contraseña">
+      <input type="password" name='pass' class="form-control" placeholder="Contraseña">
     </div>
 </div>
 <br>
 
 
-    <input type='submit' value='Cargar' name='cargar'/>
+    <input type='submit' value='Ingresar' name='cargar' class="btn btn-dark"/>
 
   </div>
 </form>
@@ -68,50 +66,62 @@ include ("header.php");
 
     if (isset($_POST['cargar'])) {
 
-
+      $admin = 'admin';
+      $passAdmin = 'admin';
 
       $user = $_POST['user'];
       $pass = $_POST['pass'];
-      $tienda = 'Mingo';
 
-    
-      
-   $query = "SELECT * FROM usuarios_admin_tienda WHERE correo ='$user' AND password = '$pass' AND tienda = '$tienda'";
+   $query = "SELECT * FROM usuarios_admin_tienda WHERE correo ='$user' AND password = '$pass'";
    $result = $conexion->query($query); 
    $num = mysqli_num_rows($result); 
 
 
-                 if ($num == 1) {
-                    
 
-                     $_SESSION['user'] = $user;
+          if ($user == $admin AND $pass == $passAdmin) {
+
+            $_SESSION['user'] = $user;
+
+            ?>
+
+                              <script type="text/javascript">
+                                window.location.href="avelun_index.php";
+                              </script>
+
+                            <?php    
+
+          }elseif ($num == 1) {
+
+
+            $_SESSION['user'] = $user;
 
 
                             ?>
 
                               <script type="text/javascript">
-                                window.location.href="cargar_marcas.php";
+                                window.location.href="usuario_index.php";
                               </script>
 
                             <?php    
+            
 
-                  }
+          }else{
 
 
-                  else
-
-                    {
-                            ?>    
+                ?>    
                                 <h4 style="color: red; margin-top: 50px;">El usuario o la contraseña son incorrectos!!</h4>
 
-                            <?php
-       
-        
-                     } 
+                  <?php
+
+          }
 
 
 
- } /*Fin del isset cargar*/
+  
+
+
+
+ } 
 
   
 ?>

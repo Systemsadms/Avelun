@@ -70,7 +70,7 @@ $consultaupdate = "UPDATE productos SET
 			$cabeceras = "";
 			$cabeceras = "MIME-VErsion: 1.0 \r\n";
 			$cabeceras	= "Content-Type: text/html; charset=iso-8859-1\r\n";
-			$cabeceras = "To: " . $_POST ["email"] . "\r\n";
+			$cabeceras = "To: " .$para. "\r\n";
 			$cabeceras = "From: " . $_POST ["email"] . "\r\n";    
 									
 									

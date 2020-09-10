@@ -249,23 +249,6 @@ li{
 
 
 
-.footer-left{
-	background-color: black;
-	height: 300px;
-	color: gray;
-	font-size: 14px;
-	text-align: justify;
-	padding: 50px;
-}
-
-.footer-right{
-	background-color: black;
-	height: 300px;
-	color: white;
-	font-size: 15px;
-	text-align: center;
-	padding: 50px;
-}
 
 .avisos-legales{
 	width:200px; 

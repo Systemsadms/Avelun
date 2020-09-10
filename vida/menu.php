@@ -1,4 +1,4 @@
-<nav class="navbar ml-auto navbar-expand-lg navbar-light bg-dark " style='background-image:url(img/starfield-banner.jpg);' >
+<nav class="navbar ml-auto navbar-expand-lg navbar-dark bg-dark " style='background-image:url(img/banner-star.jpg);' >
 
 <div style='margin-left:-16px; padding-left:50px;  width:220px; background-image:url(img/lunbackground.png); background-position:-140px 0px;'> 
     <a href='../index.php'><img src="img/logo2.png" width="150" height="50"  style="cursor: pointer;"></a>

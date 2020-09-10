@@ -218,7 +218,7 @@ a:link{
             <a href="vida/crecerProfesionalmente.php"><div class="cajaUno">Crecer<br>Profesionalmente</div></a>
             <a href="vida/crecerPersonalmente.php"><div class="cajaDos">Crecer<br>Personalmente</div></a>
             <a href="vida/verteBien.php"><div class="cajaTres">Verte Bien</div></a>
-            <a href="vida/cuidatuSalud.php"><div class="cajaCuatro">Cuida Tu<br>Salud</div></a>  
+            <a href="vida/cuidaTuSalud.php"><div class="cajaCuatro">Cuida Tu<br>Salud</div></a>  
       </div>
       <a href="vida/sentirteBien.php"><div class="cajaCinco">Sentirte<br>Bien</div></a> 
       <div class="contenedorCajatienda">

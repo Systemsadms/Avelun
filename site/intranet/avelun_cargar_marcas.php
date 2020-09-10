@@ -5,15 +5,9 @@ $nombreUsu = $_SESSION["user"];
 if ($nombreUsu)
 {
 
-
 include ("../../cnx.php");
 include ("header.php");
 
-$ssql = "SELECT * FROM usuarios_admin_tienda WHERE correo = '$nombreUsu'";
-$result = $conexion->query($ssql);
-$num = mysqli_num_rows($result); 
-$row = mysqli_fetch_assoc($result);
-$tiendaProv = $row['tienda'];
 
 
 
@@ -23,7 +17,7 @@ $tiendaProv = $row['tienda'];
 
 <?php
 
-include ('menu.php');
+include ('avelun_menu.php');
 
 
      
@@ -32,9 +26,9 @@ if(isset($_POST['cargar'])){
         $nombre = $_POST['nombre'];
         $pais = $_POST['pais'];
         $descripcion = $_POST['descripcion'];
-        $tienda_asociada = $tiendaProv;
+        $tienda_asociada = 'Avelun';
         $fecha = '2010-11-12';
-        $ssql = "SELECT * FROM marcas WHERE nombre_marca='$nombre' AND tienda_asociada = '$tiendaProv'";
+        $ssql = "SELECT * FROM marcas WHERE nombre_marca='$nombre' AND tienda_asociada = '$tienda_asociada'";
         $rs = $conexion->query($ssql);
 
         if (mysqli_num_rows($rs)>0)
@@ -86,7 +80,7 @@ if(isset($_POST['cargar'])){
 </div>
 <br>
 
-    <input type='submit' value='Cargar' name='cargar' class="btn btn-dark"/>
+    <input type='submit' value='Cargar' name='cargar' class='btn btn-dark'/>
 
   </div>
 </form>

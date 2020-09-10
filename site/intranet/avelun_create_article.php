@@ -9,13 +9,6 @@ if ($nombreUsu)
 include ("../../cnx.php");
 include ("header.php");
 
-$ssql = "SELECT * FROM usuarios_admin_tienda WHERE correo = '$nombreUsu'";
-$result = $conexion->query($ssql);
-$num = mysqli_num_rows($result); 
-$row = mysqli_fetch_assoc($result);
-$tiendaProv = $row['tienda'];
-
-
 
 ?>
 
@@ -24,11 +17,11 @@ $tiendaProv = $row['tienda'];
 
 <?php
 
-include ('menu.php');
+include ('avelun_menu.php');
 
 
 
-if(isset($_POST['cargar'])){
+    if(isset($_POST['cargar'])){
 
 
          $nombre = $_POST['nombre'];
@@ -238,10 +231,7 @@ if(isset($_POST['cargar'])){
                                 )");
                         }
             }
-
 }
-
-
 ?>
 
 
@@ -260,7 +250,7 @@ if(isset($_POST['cargar'])){
             <input type="text" name='nombre' class="form-control" placeholder="Nombre">
             <br>
                     <?php 
-                    $consulta_mysql="SELECT * FROM marcas WHERE tienda_asociada='$tiendaProv'";
+                    $consulta_mysql="SELECT * FROM marcas WHERE tienda_asociada='Avelun'";
                     $resultado_consulta_mysql= $conexion->query($consulta_mysql);
                     ?>
 
@@ -320,20 +310,20 @@ if(isset($_POST['cargar'])){
             <br>
 
             <label>FOTO PRINCIPAL</label>
-            <input type='file' name='foto' required/>
+            <input type='file' name='foto'/>
             <br>
             <br>
 
             <label>FOTOS SECUNDARIAS</label>
-            <input type='file' name='nueva_foto'/>
+            <input type='file' name='nueva_foto' required/>
             <br><br>
-            <input type='file' name='nueva_foto2'/>
+            <input type='file' name='nueva_foto2' required/>
 
 
             <br><br>
             <input type='submit' value='Cargar' name='cargar' class='btn btn-dark'/>
         </form>
-<br><br><br>
+
 
 </div>
 </div>

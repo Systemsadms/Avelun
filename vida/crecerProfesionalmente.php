@@ -1,117 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Avelun Vida</title>
-	<link href="css/style.css"  rel="stylesheet" type="text/css">
-
-
-	
-
-
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<!-- CSS only --->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-	<!-- JS, Popper.js, and jQuery -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-
-
-	<link rel="icon" type="image/png" href="img/lun.png">
-
-	<script type="text/javascript">
-
-
-
-
-    function menutienda(){
-      document.getElementById('menuCollage').style.display='none';
-
-    }
-
-    function menutiendaDos(){
-      document.getElementById('menuCollage').style.display='block';
-      
-    }
-
-
-
-/*
-		  function queBuscas()
-    {
-
-      var estilo = document.getElementById("queBuscas").className;
-      if (estilo == "hidden")
-      {
-      document.getElementById("queBuscas").className = "show";	
-      }
-      else 
-      {
-        document.getElementById("queBuscas").className = "hidden"; 		
-      }
-      
-    }
-*/
-
-function mentoras()
-    {
-		
-      var estilo = document.getElementById("mentoras").className;
-      if (estilo == "hidden")
-      {
-      document.getElementById("mentoras").className = "show";	
-      }
-      else 
-      {
-        document.getElementById("mentoras").className = "hidden"; 		
-      }
-	  
-      
-    }
-
-
-
-	function vervi(){
-	
-			document.getElementById("videos").style.display= "inline-block";
-			document.getElementById("posts").style.display= "none";
-	}
-
-
-
-	function verpo(){
-	
-			document.getElementById("videos").style.display= "none";
-			document.getElementById("posts").style.display= "inline-block";
-	}
-
-
-
-
-
-</script>
-
-
-</head>
+<?php
+	include ("header.php");
+?>
 <body>
 
 
-
-
-
-
-<!--
-
-
- 
-
-
-
-
-	--->
 
 
 <div id="menuCollage">
@@ -284,7 +176,7 @@ Así que en este vídeo te cuento cómo ordeno mi celular, espero que pueda insp
 			Titulo de articulo en publicidad sin precion
 		</div>
 	</div>
-	<!--FIN Producto-->
+	<!----FIN Producto-->
 
 
 	
@@ -386,52 +278,11 @@ Así que en este vídeo te cuento cómo ordeno mi celular, espero que pueda insp
 
 
 
+<?php
 
+include ("../site/footer.php");
 
-
-<footer>
-
-	<div class="footer-left"  >
-		<div>
-			<img src='img/logo3.png' width='180px'/>
-		</div>
-		<div style='margin-top:30px;'>
-			Avelun es el mejor sitio exlusivo y pensado para mujeres, queremos ser tu mejor opcion
-			 online para adquirir productos, conocer marcas alrededor del mundo y 
-			 asegurar tu salud.
-		</div>
-		<div style='margin-top:30px; text-align:right;' >
-			<button style='color:gray; background-color:black; border:solid 1px gray; width:120px;' data-toggle="modal" data-target="#exampleModal">CONTACTAR</button>
-		</div>
-	</div>
-	
-
-
-    <div class="footer-right" >
-		<div>
-			<div class='avisos-legales'>Aviso Legal</div>
-			<div class='avisos-legales'>Politicas de Privacidad</div>
-			<div class='avisos-legales'>Terminos y Condiciones</div>
-		</div>
-		<div style='margin-top:60px;'>
-			<div style='display:inline-block;'>
-				<a href='https://www.facebook.com/avelun' target='_blank'><img src='img/face.png' width='50' style='margin-left:10px;' ></a>
-			</div>
-			<div style='display:inline-block;'>
-			<a href='https://www.instagram.com/avelun_v/' target='_blank'><img src='img/insta.png' width='50' style='margin-left:20px;'></a>
-			</div>
-			<div style='display:inline-block;'>
-			<a href='https://twitter.com/avelunv' target='_blank'><img src='img/twit.png' width='50' style='margin-left:20px;' ></a>
-			</div>
-		</div>
-                
-	</div>
-
-	<div style='background-color:#444243; height: 50px; text-align:center; color:white; padding-top:15px; font-size:12px; float: left; width: 100%;' >
-	© 2020. Systems Admins C.A. Todos los derechos reservados.
-	</div>
-
-</footer>
+?>
 
 
 

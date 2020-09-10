@@ -29,6 +29,65 @@ $urlOne = $_POST['urlOne'];
 $urlTwo = $_POST['urlTwo'];
 
 
+
+
+if(isset($_POST['enviar_solicitud'])){
+
+      $urlOne = $_POST['urlOne'];
+      $urlTwo = $_POST['urlTwo']; 
+      $id = $_POST['id'];   
+
+      $cantidad = $_POST['cantidad'];     
+      $envio = $_POST['envio'];     
+      $nombre = $_POST['nombre'];   
+      $email = $_POST['email'];   
+      $telefono = $_POST['telefono'];   
+      $mensaje = $_POST['mensaje'];
+
+    
+      $body='Hemos recibido una orden de compra
+
+      Datos Del Articulo:
+      Url 1                       '.$_POST['urlOne'].'
+      Url 2                       '.$_POST['urlTwo'].'
+      ID                          '.$_POST['id'].'
+
+
+      Datos Del Usuario:
+      
+      Nombre de Contacto          '.$_POST['nombre'].'                
+      Telefono:                   '.$_POST['telefono'].'
+      Email de Contacto:          '.$_POST['email'].'
+      Cantidad:                   '.$_POST['cantidad'].'
+      Producto:                   '.$_POST['producto'].'
+      Tipo de Envio:              '.$_POST['envio'].'               
+      Mensaje:                    '.$_POST['mensaje'].'
+      ';
+                    
+      $para="enriquemendoza162@gmail.com";
+            
+      $mensaje = $body;
+              
+      $asunto   = 'Nueva Orden de Compra';
+      $desde    = $_POST["email"];
+      $mensaje  = $body;
+      $cabeceras = "";
+      $cabeceras = "MIME-VErsion: 1.0 \r\n";
+      $cabeceras  = "Content-Type: text/html; charset=iso-8859-1\r\n";
+      $cabeceras = "To: " .$para. "\r\n";
+      $cabeceras = "From: " . $desde . "\r\n";    
+                  
+                  
+      mail ($para, $asunto, $mensaje, $cabeceras);
+
+
+
+      echo "<div style='width: 100%; text-align: center;''><h4 style='color: green; margin-top: 50px; display: inline-block;''>Su solicitud de compra ha sido enviada con EXITO!!</h4></div>";
+
+
+
+}
+
  
 ?>
     
@@ -85,8 +144,9 @@ $urlTwo = $_POST['urlTwo'];
                       <div class="modal-body" style="width: 400px;">
                         <form method='post' action='enviar_solicitud.php'>
 
-                                <input type='hidden' name='producto' value='<?php echo $nombre ?>'/>
-                                <input type='hidden' name='marca' value='<?php echo $marca ?>'/>
+                                <input type='hidden' name='urlOne' value='<?php echo $urlOne ?>'/>
+                                <input type='hidden' name='urlTwo' value='<?php echo $urlTwo ?>'/>
+                                <input type='hidden' name='id' value='<?php echo $ides ?>' />
 
                                   <div class="form-group" style="width: 100px;">
                                     <label for="exampleFormControlInput1" style="font-size: 17px;">Cantidad</label>
@@ -118,8 +178,6 @@ $urlTwo = $_POST['urlTwo'];
                                   <div class="form-group">
                                     <label for="exampleFormControlTextarea1" style="font-size: 17px;">Dejanos un comentario</label>
                                     <textarea style="height: 70px;" class="form-control" id="exampleFormControlTextarea1" rows="3" name='mensaje'></textarea>
-
-                                    <input type='hidden' name='id' value='<?php echo $id ?>' />
                                     <input type="submit" name="enviar_solicitud" value="Enviar Orden de Compra" class="btn btn-primary" style="margin-top:30px; width:300px; background-color: #b30000; border:0px;" >
                                   </div>
                                 </form>

@@ -40,7 +40,6 @@ if(isset($_POST['productos'])){
 				
 <?php
 
-//Conexión Servidor Remoto
 
 require ('../cnx.php');
 
@@ -50,19 +49,6 @@ $ssql = "SELECT * FROM productos WHERE tipo='$productos'";
 $result = mysqli_query($conexion,$ssql);
 $num = mysqli_num_rows($result); 
 $row = mysqli_fetch_assoc($result);
-//$visited = $row['visited'];
-//$newvisited = $visited+1;
-
-
-
-/*$consultaupdate = "UPDATE marcas SET 
-                    visited='$newvisited'
-                        WHERE nombre_marca='$marca'";     
-                   // $hacerconsulta = mysql_query ($consultaupdate);
-
-                    $hacerconsulta = $conexion->query($consultaupdate);*/
-
-             
 
 $consulta = "SELECT * FROM productos WHERE tipo='$productos' ";
 $result = mysqli_query($conexion,$ssql);
@@ -71,7 +57,6 @@ $row = mysqli_fetch_assoc($result);
 $marca = $row['marca'];
 
 
-                           // $hacerconsulta=mysql_query ($consulta,$conexion);
 							
 							$hacerconsulta2 = $conexion->query($consulta);
                             
@@ -88,7 +73,7 @@ $marca = $row['marca'];
 							
 							<div style='width:300px; background-color:none; display:inline-block; margin-right:20px; margin-bottom:30px;'>
 							<form method='post' action='producto.php'>
-								<div> <input type='image' name='imageField' width='300' height='220' style='margin-right:20px; margin-bottom:-7px;' src='intranet/".$reg[8]."' /></div>
+								<div> <input type='image' name='imageField' width='300' height='220' style='margin-right:20px; margin-bottom:-7px;' src='intranet/fotos_principales/".$reg[8]."' /></div>
 								<div><input type='submit'  value='".$reg[1]."' style='color:#007bff; width:300px; height:auto; border:none; background-color:white;'/></div>
 								<div><input type='submit'  value='".$reg[6]."$' style='color:red; border:none; background-color:white;'/></div>	
 								<input type='hidden' name='modelo' value='".$reg[3]."'/>

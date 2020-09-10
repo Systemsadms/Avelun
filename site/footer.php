@@ -1,26 +1,27 @@
 
 
-<footer class="row foterwith" style="z-index: 3;" >
+<footer class="row" style="z-index: 3;" >
 
 
 
-	<div class="col-md-5 footer-left"  style="height: 380px;">
+	<div class="col-md-5"  style="background-color: black; height: 300px; color: gray; font-size: 14px; text-align: justify; padding: 50px;">
 		<div>
-			<img src='img/avelun 2.png' width='180px'/>
+			<img src='../vida/img/logo3.png' width='180px'/>
 		</div>
 		<div style='margin-top:30px;'>
-			Avelun es el mejor sitio exlusivo y pensado para mujeres, queremos ser tu mejor opcion
-			 online para adquirir productos, conocer marcas alrededor del mundo y 
-			 asegurar tu salud.
+			AveLun es el mejor sitio pensado para mujeres, nuestras Mentoras te enseñaran a crecer profesionalmente,
+			crecer personalmente, verte bien, sentirte bien y vivir de forma saludable.
 		</div>
+		<!--
 		<div style='margin-top:30px; text-align:right;' >
 			<button style='color:gray; background-color:black; border:solid 1px gray; width:120px;' data-toggle="modal" data-target="#exampleModal">CONTACTAR</button>
 		</div>
+		 -->
 	</div>
 	
 
 
-    <div class="col-md-7 footer-right" style="height: 380px;">
+    <div class="col-md-7" style="background-color: black; height: 300px; color: white; font-size: 15px; text-align: center; padding: 50px;">
 		<div>
 			<div class='avisos-legales'>Aviso Legal</div>
 			<div class='avisos-legales'>Politicas de Privacidad</div>
@@ -35,6 +36,9 @@
 			</div>
 			<div style='display:inline-block;'>
 			<a href='https://twitter.com/avelunv' target='_blank'><img src='img/twit.png' width='50' style='margin-left:20px;' ></a>
+			</div>
+			<div style='display:inline-block;'>
+			<a href='https://api.whatsapp.com/send?phone=584241443095' target='_blank'><img src='img/whatspp.png' width='50' style='margin-left:20px;' ></a>
 			</div>
 		</div>
                 

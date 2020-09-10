@@ -25,8 +25,6 @@
 </div><!--Container END-->
 
 
-
-
     <?php
         include ("cestinIndexHtml.php");
         include ("filtroFooter.php");

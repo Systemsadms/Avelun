@@ -231,49 +231,11 @@
 
 
 
-<footer>
+<?php
 
-	<div class="footer-left"  >
-		<div>
-			<img src='img/logoWhite.png' width='180px'/>
-		</div>
-		<div style='margin-top:30px;'>
-			Avelun es el mejor sitio exlusivo y pensado para mujeres, queremos ser tu mejor opcion
-			 online para adquirir productos, conocer marcas alrededor del mundo y 
-			 asegurar tu salud.
-		</div>
-		<div style='margin-top:30px; text-align:right;' >
-			<button style='color:gray; background-color:black; border:solid 1px gray; width:120px;' data-toggle="modal" data-target="#exampleModal">CONTACTAR</button>
-		</div>
-	</div>
-	
+include ("../site/footer.php");
 
-
-    <div class="footer-right" >
-		<div>
-			<div class='avisos-legales'>Aviso Legal</div>
-			<div class='avisos-legales'>Politicas de Privacidad</div>
-			<div class='avisos-legales'>Terminos y Condiciones</div>
-		</div>
-		<div style='margin-top:60px;'>
-			<div style='display:inline-block;'>
-				<a href='https://www.facebook.com/avelun' target='_blank'><img src='img/face.png' width='50' style='margin-left:10px;' ></a>
-			</div>
-			<div style='display:inline-block;'>
-			<a href='https://www.instagram.com/avelun_v/' target='_blank'><img src='img/insta.png' width='50' style='margin-left:20px;'></a>
-			</div>
-			<div style='display:inline-block;'>
-			<a href='https://twitter.com/avelunv' target='_blank'><img src='img/twit.png' width='50' style='margin-left:20px;' ></a>
-			</div>
-		</div>
-                
-	</div>
-
-	<div style='background-color:#444243; height: 50px; text-align:center; color:white; padding-top:15px; font-size:12px; float: left; width: 100%;' >
-	© 2020. Systems Admins C.A. Todos los derechos reservados.
-	</div>
-
-</footer>
+?>
 
 
 
